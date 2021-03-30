@@ -1,0 +1,57 @@
+<div class="backlog {{visible}}">
+  <div class="login">
+    <h1>Sign In / Sign Up</h1>
+    <input type="text" placeholder="nickname" #nick>
+    <input type="password" name="pass" placeholder="Passwords" #pass>
+    <button (click)="signin(nick, pass)">Sign In</button>
+    <button (click)="signup(nick, pass)">Sign UP</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+  <div class="Top">
+    <select name="Channel" placeholder="Channel" id="cnl" #cnl (change)="chooseCnl(cnl)">
+      <option value="0">#0</option>
+      <option value="1">#1</option>
+      <option value="2">#2</option>
+      <option value="3">#3</option>
+      <option value="4">#4</option>
+    </select>
+  </div>
+
+
+
+  <div class="chat" id="chat" #scrollMe>
+
+    <div class="msg {{message.msgr}}}" *ngFor = "let message of messageList2">
+      <p id="message">{{message.nickname}} : {{message.messaggio}}</p>
+    </div>
+
+    <div class="msg {{message.msgr}}}" *ngFor = "let message of messageList">
+      <p id="message">{{nick.value}} : {{message}}</p>
+    </div>
+
+  </div>
+
+  <div class="Bottom">
+    <input class="chattext" id="msg" placeholder="Type something..." (keyup)="$event.keyCode == 13 && sendMessage(message, nick, cnl)"  #message/>
+    <button class="material-icons" (click)="sendMessage(message, nick, cnl)" id="btn">send</button>
+  </div>
+</div>

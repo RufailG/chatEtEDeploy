@@ -1,0 +1,203 @@
+html, *
+{
+  padding: 0;
+  margin: 0;
+}
+
+.backlog
+{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0s;
+  width: 100%;
+  height: 100vh;
+  background-color: #B3E9C7;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hide
+{
+  display: none;
+  background-color: transparent;
+}
+
+
+
+.login
+{
+  width: 50%;
+  height: 50vh;
+  background-color: #254441;
+  justify-content: center;
+}
+
+.login h1
+{
+  color: white;
+  font-size: 48px;
+  margin: 20px;
+}
+
+.login input
+{
+  width: 60%;
+  font-size: 32px;
+  margin: 20px;
+  padding: 5px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.login button
+{
+  width: 35%;
+  padding: 6px;
+  margin: 20px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #B3E9C7;
+  color: #254441;
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container
+{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: #B3E9C7;
+}
+
+.chat
+{
+    display: block;
+    width: 100%;
+    height: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.chat::-webkit-scrollbar
+{
+    width: 0px;
+}
+
+.msg
+{
+    display: flex;
+    max-width: 100%;
+    font-size: 24px;
+    align-items: center;
+}
+
+.msgr
+{
+  justify-content: flex-end;
+}
+
+
+.msg p
+{
+  max-width: 100%;
+  color: #B3E9C7;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px 5%;
+  background-color: #041d1a;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.48);
+}
+
+.Top
+{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #254441;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Bottom
+{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #254441;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chattext
+{
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+#nck
+{
+  width: 20%;
+}
+
+#msg
+{
+  width: 80%;
+}
+
+#btn, #cnl
+{
+  width: 15%;
+  padding: 6px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+  background-color: #B3E9C7;
+  color: #254441;
+  outline: none;
+}
+
+
+@media screen and (max-width:800px)
+{
+  #nck
+  {
+    width: 55%;
+  }
+  #cnl
+  {
+    width: 40%;
+  }
+  #btn
+  {
+    width: 20%;
+  }
+  #msg
+  {
+    width: 75%;
+  }
+}
